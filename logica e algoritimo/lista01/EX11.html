@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//mensagem
+var mensagem = "escolha a conversão de valores"
+    mensagem += "\n\n1) Real para Dólar"
+    mensagem += "\n2) Dólar para Real"
+    mensagem += "\n3) Real para Euro"
+    mensagem += "\n4) Euro para Real"
+
+    //obter dados 
+
+    var tipoMoeda = prompt(mensagem)
+    var valor = prompt("Qual valor deseja converter ?")
+
+//calcular
+if(tipoMoeda == 1){
+
+   alert (valor / 5.3)
+
+}else if(tipoMoeda == 2){
+
+    alert(valor * 5.3)
+
+}else if(tipoMoeda == 3){
+
+alert(valor / 6.4)
+
+}else{
+
+    alert(valor * 6.4)
+}
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

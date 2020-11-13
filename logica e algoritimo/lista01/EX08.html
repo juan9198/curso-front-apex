@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //variavel
+  var nota1 = parseInt(prompt("Emforme a primeira nota"))
+  var nota2 = parseInt(prompt("Emforme a segunda nota "))
+  var nota3 = parseInt(prompt("Emforme a terceira nota"))
+  var faltas = prompt("Numero de faltas")
+   
+  //calculo de media 
+  var media = (nota1+nota2+nota3)/3
+
+  //condicional
+  if(faltas > 15){
+      document.write("Reprovado por faltas")
+  }else if (media >= 7 ){
+   document.write("Aprovado "+media)
+  }else if (media >= 5 ){
+      document.write("Em exame "+media)
+  }else{
+      document.write("Reprovado "+ media)
+  }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

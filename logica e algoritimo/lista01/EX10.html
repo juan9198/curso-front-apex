@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//obter notas
+var real2 = parseInt(prompt("Quantas notas de R$2,00"))
+var real5 = parseInt(prompt("Quantas notas de R$5,00"))
+var real10 = parseInt(prompt("Quantas notas de R$10,00"))
+var real20 = parseInt(prompt("Quantas notas de R$20,00"))
+var real50 = parseInt(prompt("Quantas notas de R$50,00"))
+var real100 = parseInt(prompt("Quantas notas de R$100,00"))
+var real200= parseInt(prompt("Quantas notas de R$200,00"))
+
+// calcular notas
+ var total = real2 * 2
+      total += real5 * 5
+      total += real10 * 10
+      total += real20 * 20  
+      total += real50 * 50
+      total += real100 * 100
+      total += real200 * 200
+
+
+    //exbir total 
+    alert("R$"+total.toFixed(2))
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
