@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//obter msg
+var msg = "Candidatos"
+    msg+= "\n\n1)Juan"
+    msg+="\n2)Ralfs"
+    msg+="\n3)Lucas"
+    msg+="\n\n4)finalizar votação"
+
+    //voto
+    var voto
+
+    //candidatos
+    var Juan = 1
+    var Ralfs = 2
+    var Lucas = 3
+
+//Laço
+do{
+voto = parseInt(prompt(msg))
+
+switch (voto){
+case 1 :Juan++
+break
+
+case 2 :Ralfs++
+break
+
+case 3 :Lucas++
+break
+   }
+}while(voto != 4)
+
+//Contagem de votos 
+
+document.write("Juan obteve : "+Juan+" votos<br>")
+document.write("Ralfs obteve : "+Ralfs+" votos<br>")
+document.write("Lucas obteve : "+Lucas+" votos<br>")
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
