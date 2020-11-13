@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+//menu
+var menu = "votação de municipio \n"
+ menu+= "1) Blumenau \n"
+ menu+= "2) Brusque \n"
+ menu+= "3) Pomerode \n"
+ menu+= "4) Timbó \n"
+ menu+= "5) finalizar votação"
+
+// obter voto
+var voto
+
+//Contadores
+var Blumenau = 0
+var Brusque = 0
+var Pomerode = 0
+var Timbó = 0
+
+
+// laço
+ do{
+  voto = parseInt(prompt(menu))
+ 
+    switch(voto){
+
+     case 1: Blumenau++
+     break
+     
+     case 2 : Brusque++
+     break
+
+     case 3 : Pomerode++
+     break
+    
+     case 4 : Timbó++
+     break
+     
+    }
+
+ } while (voto != 5)
+
+ //contação de votos 
+ document.write("Blumenau obteve: "+Blumenau+" votos<br>")
+ document.write("Brusque obteve: "+Brusque+" votos<br>")
+ document.write("Pomerode obteve: "+Pomerode+" votos<br>")
+ document.write("Timbó obteve: "+Timbó+" votos<br>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
