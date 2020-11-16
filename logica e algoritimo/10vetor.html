@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   //vetor
+   var nome = []
+
+   //Indice
+   var Indice= 0
+
+   //variavel para verifica fara o loop
+   var verifica
+
+
+   // laço
+   do{
+           nome[Indice] = prompt("Infotme o "+(Indice+1)+"º nome")
+           Indice++
+
+           verifica= confirm("Deseja cadastrar mais alguem ?")
+        }while(verifica==true)
+
+
+    //listar nomes
+for (var Indice=0 ; Indice<nome.length; Indice++) {
+    document.write((Indice+1)+"º nome é :"+nome[Indice] + "<hr>")
+    
+}
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

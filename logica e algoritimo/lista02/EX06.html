@@ -13,23 +13,44 @@ var msg = "1) Arroz - R$5,00"
     msg+="\n5) Açúcar - R$4,80"
     msg+="\n\n0) Finalizar comprtas"
 
-//compras
-var compras
+//total
+var total = 0
 
+//codigo
+var codigo
 
-// produto
-var Arroz = 5
-var Feijao = 8
-var Macarrao = 3.50
-var Trigo = 6.20
-var Acuca = 4.80
+//laço
 
 do{
-    compras = parseFloat(prompt(msg))
+    //obter codigo
+    codigo = parseInt(prompt(msg))
+
+    switch (codigo) {
+        
+        case 1:
+        total += 5    
+        break
+
+       case 2:
+       total += 8
+       break
+
+       case 3:
+        total += 3.5    
+        break
+
+        case 4:
+       total += 6.2    
+       break
+
+       case 5:
+       total += 4.8    
+       break
+     }
     
+}while (codigo != 0)
 
-}while
-
+document.write("O total é R$"+total.toFixed(2))
 
     </script>
 </head>

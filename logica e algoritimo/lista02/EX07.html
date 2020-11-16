@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ //menu
+ var menu = "menu\n"
+      menu+="\n1)Atendente"
+      menu += "\n2)Gerente"
+      menu +="\n3)Desenvolvedor"
+      menu +="\n4)Analista"
+      menu +="\n5)Designer"
+      menu +="\n\n0)Finalizar"
+      
+//contadores
+ var Atendente = 0
+ var Gerente = 0
+ var Desenvolvedor = 0 
+ var Analista = 0
+ var Designer = 0
+
+ //codigo
+ var codigo
+
+ //laço
+  do{
+     //obter o codigo do cargo
+     codigo=parseInt(prompt(menu))
+    
+     switch(codigo){
+ 
+         case 1 : Atendente++
+         break
+
+         case 2 : Gerente++
+         break
+
+         case 3 :Desenvolvedor++
+         break
+
+         case 4 :Analista++
+         break
+
+         case 5 :Designer++
+
+     }
+
+
+  }while(codigo != 0)
+
+  document.write("Atendente "+Atendente+"<hr>")
+  document.write("Gerente"+Gerente+"<hr>")
+  document.write("Desenvolvedor"+Desenvolvedor+"<hr>")
+  document.write("Analista"+Analista+"<hr>")
+  document.write("Designer"+Designer+"<hr>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

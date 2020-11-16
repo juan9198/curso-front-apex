@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//vetor
+var numero = []
+
+//soma 
+var soma = 0 
+
+//obter numeros 
+for (var linha = 0 ; linha < 7 ; linha++){
+    numero[linha] = parseInt(prompt("Informe o "+(linha+1)+"º nume"))
+}
+//Exibir numero
+
+for (var linha=0 ;linha<numero.length; linha++){
+    document.write((linha+1)+"º numero "+numero[linha]+"<br>")
+    
+    soma += numero[linha];
+    
+}
+
+//Exbir soma 
+document.write("<hr>"+soma)    
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
