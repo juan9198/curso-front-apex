@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//vetor
+var numeros = []
+
+//numero
+var numero 
+
+//laço
+do{
+numero = prompt("Imforme o numero")
+
+if (numero != 0 ) {
+    numeros.push(numero)
+}
+
+}while(numero != 0)
+
+
+var positivos = 0
+var negativos = 0
+var pares = 0
+var impares = 0
+
+for( var indice = 0; indice < numeros.length; indice++){
+
+    // Par ou ímpar
+    if(numeros[indice] % 2 == 0){
+        pares++
+    }else{
+        impares++
+    }
+
+    // Positivo ou negativo
+    if(numeros[indice] > 0){
+            positivos++
+          }else{
+            negativos++
+            }
+    }
+
+
+    // exbir contadore
+     document.write("Pares"+pares+"<br>");
+     document.write("Impares"+impares+"<br>");
+     document.write("positivo"+positivos+"<br>");
+     document.write("negativos"+negativos+"<br>");
+
+//exbir numeros 
+for(var indice = 0 ; indice < numeros.length ; indice++){
+    document.write(numeros[indice]+"<br>")
+}
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

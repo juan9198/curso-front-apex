@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //numero
+        var numero = []
+
+        // obter numeros
+        for (var indice = 0 ; indice < 5 ; indice++){
+            numero[indice]=parseInt(prompt("Informe o "+(indice+1)+"º numero"))
+        }
+        //soma
+        var soma = 0 
+        for (var indice = 0 ; indice <5 ; indice++){
+            soma += numero[indice]
+        }
+        //media 
+
+        var media = soma / 5
+
+        // exbir media
+
+        document.write("A media é "+media+"<hr>")
+
+        //numeros maires ou igual a media
+        for (var indice = 0 ; indice <5 ; indice++){
+            if(numero[indice] >= media){
+                document.write(numero[indice]+"<br>")
+            }
+        }
+            
+
+
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

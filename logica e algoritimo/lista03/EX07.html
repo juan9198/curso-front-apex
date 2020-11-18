@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//vetor
+var numeros = []
+
+//laco
+for(var indice = 0 ; indice <5 ; indice++){
+    numeros[indice]=prompt("Informe o "+(indice+1)+"º numero .")
+}
+
+// verificação do numero 10 
+var existe = false
+
+// exbir todos os numeros iguas a 10
+
+for(var indice =  0 ; indice < numeros.length ; indice++){
+   if( numeros[indice] == 10){
+       document.write(" O numero 10 esta na "+(indice+1)+"º posição <br>")
+       existe = true
+   } 
+}
+//caso não exista o numero 10
+if(existe == false){
+    document.write("O numero 10 não foi encontrado ")
+}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
